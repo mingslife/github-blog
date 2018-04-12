@@ -7,7 +7,7 @@
     <Layout>
       <Header>
         <Menu mode="horizontal" theme="dark" active-name="1">
-          <div class="layout-logo"></div>
+          <div class="layout-logo">GitHub Blog</div>
           <div class="layout-nav">
             <MenuItem name="1">
               <Icon type="ios-home"></Icon> Home
@@ -29,12 +29,11 @@
           <Menu active-name="1-2" theme="light" width="auto" :open-names="['1']">
             <Submenu name="1">
               <template slot="title">
-                <Icon type="ios-navigate"></Icon>
-                Item 1
+                <Icon type="ios-navigate"></Icon> es6tutorial
               </template>
-              <MenuItem name="1-1">Option 1</MenuItem>
-              <MenuItem name="1-2">Option 2</MenuItem>
-              <MenuItem name="1-3">Option 3</MenuItem>
+              <MenuItem name="1-1">array</MenuItem>
+              <MenuItem name="1-2">arraybuffer</MenuItem>
+              <MenuItem name="1-3">async</MenuItem>
             </Submenu>
             <Submenu name="2">
               <template slot="title">
@@ -58,7 +57,7 @@
             <Breadcrumb :style="{margin: '24px 0'}">
               <BreadcrumbItem>Home</BreadcrumbItem>
               <BreadcrumbItem>Blog</BreadcrumbItem>
-              <BreadcrumbItem>Layout</BreadcrumbItem>
+              <BreadcrumbItem>array</BreadcrumbItem>
             </Breadcrumb>
             <Content :style="{padding: '24px', minHeight: '280px', background: '#fff'}">
               <router-view/>
@@ -124,14 +123,16 @@ export default {
   overflow: hidden;
 }
 .layout-logo {
-  width: 100px;
-  height: 30px;
-  background: #5b6270;
-  border-radius: 3px;
+  /* width: 100px; */
+  /* height: 65px; */
+  /* background: #5b6270; */
+  /* border-radius: 3px; */
   float: left;
   position: relative;
-  top: 15px;
-  left: 20px;
+  /* top: 15px; */
+  /* left: 20px; */
+  color: #fff;
+  font-size: 18px;
 }
 .layout-nav {
   width: 420px;
